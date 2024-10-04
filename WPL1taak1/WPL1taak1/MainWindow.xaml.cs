@@ -21,9 +21,14 @@ namespace WPL1taak1
             InitializeComponent();
         }
 
-        private void Grid_Initialized(object sender, EventArgs e)
+        private void Image_MouseEnter(object sender, MouseEventArgs e)
         {
+            mainWindow.Background = new SolidColorBrush(Colors.Black);
+        }
 
+        private void Image_MouseLeave(object sender, MouseEventArgs e)
+        {
+            mainWindow.Background = new SolidColorBrush((Color)ColorConverter.ConvertFromString("#FFBDB8B8"));
         }
     }
 }
