@@ -23,7 +23,7 @@ namespace WPL1taak1
 
         private void Image_MouseEnter(object sender, MouseEventArgs e)
         {
-            mainWindow.Background = new SolidColorBrush(Colors.Pink);
+            mainWindow.Background = new SolidColorBrush(Colors.Black);
         }
 
         private void Image_MouseLeave(object sender, MouseEventArgs e)
@@ -34,21 +34,25 @@ namespace WPL1taak1
         private void klikOpRood(object sender, MouseButtonEventArgs e)
         {
             kleurCodeTextBox.Text = "#FF0000";
+            infoTextBox.Text = "Rood is de kleur van warmte";
         }
 
         private void klikOpGeel(object sender, MouseButtonEventArgs e)
         {
             kleurCodeTextBox.Text = "#FFFF00";
+            infoTextBox.Text = "Geel is de kleur van levenslust";
         }
 
         private void klikOpGroen(object sender, MouseButtonEventArgs e)
         {
             kleurCodeTextBox.Text = "#008000";
+            infoTextBox.Text = "Groen is de kleur van genezing";
         }
 
         private void klikOpBlauw(object sender, MouseButtonEventArgs e)
         {
             kleurCodeTextBox.Text = "#0000FF";
+            infoTextBox.Text = "Blauw is de kleur van intelligentie";
         }
     }
 }
