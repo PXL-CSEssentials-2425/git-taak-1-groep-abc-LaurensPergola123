@@ -7,7 +7,17 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid x:Name="mainWindow" Background="#FFBDB8B8">
-        <TextBlock HorizontalAlignment="Left" Margin="73,38,0,0" TextWrapping="Wrap" Text="Kleurenpsychologie" VerticalAlignment="Top" Height="33" Width="200" FontSize="22"/>
-        <Image HorizontalAlignment="Left" Height="100" Margin="655,10,0,0" VerticalAlignment="Top" Width="100" Source="/PXL.png" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave"/>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="2*"/>
+            <ColumnDefinition Width="23*"/>
+        </Grid.ColumnDefinitions>
+        <TextBlock HorizontalAlignment="Left" Margin="9,38,0,0" TextWrapping="Wrap" Text="Kleurenpsychologie" VerticalAlignment="Top" Height="33" Width="200" FontSize="22" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="591,10,0,0" VerticalAlignment="Top" Width="100" Source="/PXL.png" MouseEnter="Image_MouseEnter" MouseLeave="Image_MouseLeave" Grid.Column="1"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="52,110,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/Rood.png" Grid.Column="1" MouseLeftButtonDown="klikOpRood"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="209,110,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/Geel.png" Grid.Column="1" MouseLeftButtonDown="klikOpGeel"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="52,217,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/Groen.png" Grid.Column="1" MouseLeftButtonDown="klikOpGroen"/>
+        <Image HorizontalAlignment="Left" Height="100" Margin="209,217,0,0" VerticalAlignment="Top" Width="100" Source="/Assets/Blauw.png" Grid.Column="1" MouseLeftButtonDown="klikOpBlauw"/>
+        <TextBox x:Name="kleurCodeTextBox" Grid.Column="1" HorizontalAlignment="Left" Margin="189,325,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="120"/>
+        <Label Grid.Column="1" Content="Kleurcode" HorizontalAlignment="Left" Margin="52,321,0,0" VerticalAlignment="Top"/>
     </Grid>
 </Window>

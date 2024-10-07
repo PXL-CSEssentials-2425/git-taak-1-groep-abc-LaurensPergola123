@@ -9,10 +9,28 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <None Remove="Assets\Blauw.png" />
+    <None Remove="Assets\Geel.png" />
+    <None Remove="Assets\Groen.png" />
+    <None Remove="Assets\Rood.png" />
+    <None Remove="Geel.png" />
     <None Remove="PXL.png" />
   </ItemGroup>
 
   <ItemGroup>
+    <Resource Include="Assets\Blauw.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Geel.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Groen.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Assets\Rood.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Resource>
+    <Resource Include="Geel.png" />
     <Resource Include="PXL.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </Resource>
